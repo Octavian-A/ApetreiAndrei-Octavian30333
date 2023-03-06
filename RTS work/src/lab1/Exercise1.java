@@ -22,8 +22,9 @@ public class Exercise1 {
     public static void Product(int re1,int im1,int re2,int im2){
         int reNew;
         int imNew;
-        reNew = re1*re2;
-        imNew = im1*im2;
+        reNew = re1 * re2 + im1 * im2;
+        imNew = im1* re2 + re1 * im2;
+
         if(imNew<0) {
             System.out.println(String.valueOf(reNew) + imNew + "i");
         }
